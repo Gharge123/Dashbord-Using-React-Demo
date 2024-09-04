@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Sidebar from './components/Sidebar';
+import Header from './components/Header';
+import Performance from './components/Performance';
+import Tasks from './components/Tasks';
+import Activity from './components/Activity';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const handleAddProject = () => {
+        // Add project logic
+    };
+
+    const handleAddTask = () => {
+        // Add task logic
+    };
+
+    return (
+        <div className="container">
+            <Sidebar onAddProject={handleAddProject} onAddTask={handleAddTask} />
+            <div className="main-content">
+                <Header />
+                <Performance />
+                <Tasks />
+            </div>
+            <Activity />
+        </div>
+    );
 }
 
 export default App;

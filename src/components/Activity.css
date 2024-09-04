@@ -1,0 +1,38 @@
+.activity-section {
+    /* Same as before */
+}
+
+.chat-section {
+    margin-top: 20px;
+}
+
+.chat-messages {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.chat-messages li {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.chat-input {
+    display: flex;
+    align-items: center;
+}
+
+.chat-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.chat-actions {
+    display: flex;
+    gap: 10px;
+}
